@@ -19,10 +19,10 @@ public class Address {
     @Column(name = "streetname", length = 60, nullable = false)
     private String streetName;
 
-    @Column(name = "number", length = 10 , nullable = false)
+    @Column(name = "number", length = 10, nullable = false)
     private Integer number;
 
-    @Column(name = "complement", length = 15 , nullable = false)
+    @Column(name = "complement", length = 15, nullable = false)
     private String complement;
 
 
@@ -135,5 +135,6 @@ public class Address {
     public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
+
 
 }
