@@ -16,37 +16,29 @@ public class Address {
     private Integer id;
 
 
-    @Column(name = "streetname", length = 30)
-    @NotNull
+    @Column(name = "streetname", length = 60, nullable = false)
     private String streetName;
 
-    @Column(name = "number", length = 10)
-    @NotNull
+    @Column(name = "number", length = 10 , nullable = false)
     private Integer number;
 
-    @Column(name = "complement", length = 15)
-    @NotNull
+    @Column(name = "complement", length = 15 , nullable = false)
     private String complement;
 
 
-    @Column(name = "neighbourhood", length = 15)
-    @NotNull
+    @Column(name = "neighbourhood", length = 15, nullable = false)
     private String neighbourhood;
 
-    @Column(name = "city", length = 15)
-    @NotNull
+    @Column(name = "city", length = 15, nullable = false)
     private String city;
 
-    @Column(name = "state", length = 15)
-    @NotNull
+    @Column(name = "state", length = 15, nullable = false)
     private String state;
 
-    @Column(name = "country", length = 15)
-    @NotNull
+    @Column(name = "country", length = 15, nullable = false)
     private String country;
 
-    @Column(name = "zipcode", length = 20)
-    @NotNull
+    @Column(name = "zipcode", length = 20, nullable = false)
     private String zipcode;
 
     @Column(name = "latitude", length = 20)
